@@ -48,7 +48,7 @@ quiet:    false
 defaults: []
 
 sass:
-	style: compressed
+	style: :compressed
 
 # Markdown Processors
 maruku:

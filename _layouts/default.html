@@ -3,8 +3,14 @@
 <head>
    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
    <title>{{ page.title }} | CowDev</title>
+   {% if page.metaTitle %}
+   <meta name="title" content="{{ page.metaTitle }}">
+   {% else %}
+   <meta name="title" content="{{ page.title }} | CowDev">
+   {% endif %}
+   {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
    <meta name="author" content="Sander Koedood" />
-   <link rel="stylesheet" href="/_assets/css/style.css" type="text/css" media="screen" />
+   {% stylesheet style %}
 </head>
 <body>
 	{{ content }}

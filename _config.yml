@@ -47,8 +47,8 @@ timezone:      null
 quiet:    false
 defaults: []
 
-assets:
-  css_compressor: sass
+sass:
+	style: compressed
 
 # Markdown Processors
 maruku:

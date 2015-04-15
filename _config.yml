@@ -23,7 +23,8 @@ unpublished: false
 
 # Plugins
 whitelist: []
-gems:      []
+gems:
+  - jekyll-sitemap
 
 # Conversion
 markdown:    kramdown

@@ -1,0 +1,51 @@
+// header
+
+.header {
+    width: 400px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    
+    &:before {
+        content: '';
+        position: absolute;
+        right: 0;
+        width: 50px;
+        background: #111;
+        height: 10%;
+        top: 0;
+    }
+    
+    &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        width: 50px;
+        background: #111;
+        height: calc(90% - 100px);
+        top: calc(10% + 100px);
+    }
+    
+    .logo {
+        position: absolute;
+        right: 0;
+        top: 10%;
+        overflow: hidden;
+        display: block;
+        height: 100px;
+        
+        &:before {
+            content: '';
+            position: absolute;
+            top: 2px;
+            width: 97px;
+            height: 97px;
+            border-radius: 100%;
+            box-shadow: 120px 0px 0px 80px #111;
+            right: 2px;
+        }
+        
+    }
+    
+}

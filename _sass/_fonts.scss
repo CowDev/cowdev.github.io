@@ -1,0 +1,85 @@
+// Font styling
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $header-font;
+	letter-spacing: 0;
+}
+
+a {
+	color: $red;
+}
+
+::-moz-selection {
+	background: $red;
+	color: white;
+}
+
+::selection {
+	background: $red;
+	color: white;
+}
+
+code {
+	padding: 0 0.3em;
+	background: #222;
+	box-shadow: inset 3px 3px 5px rgba(100,100,100,0.3);
+	border-radius: 0.3em;
+	border: 2px solid rgba(100,100,100,0.4);
+}
+
+pre, code {
+	font-family: $code-font;
+}
+
+.cutout-text {
+	
+	background-image: url(http://lorempixel.com/g/400/1200/abstract/);
+	background-size: cover;
+
+    color: white;
+    
+    height: 100%;
+    width: 100%;
+    
+    box-sizing: border-box;
+    
+    padding: 10% 100px 0 0;
+    
+    position: relative;
+    
+    font-size: 3em;
+    font-weight: bold;
+    font-family: $header-font;
+    
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+    display: inline-block;
+    text-align: center;
+    
+    &:before,
+    &:after {
+    	position: absolute;
+    	content: '';
+    }
+    
+    &:before {
+    	z-index: -2;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    background-image: inherit;
+    }
+
+	&:after {
+		position: absolute;
+	    z-index: -1;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    background-color: rgba( $red, .7 );
+	}
+
+}

@@ -8,10 +8,23 @@
    
    <meta name="description" content="Testpage">
    <meta name="author" content="Sander Koedood" />
+   <link rel="shortcut icon" href="/favicon.ico" />
    <link style="text/css" rel="stylesheet" href="/css/style.css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62251020-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </head>
 <body>
-	<h1 id="page-title">Page Title</h1>
+	
+	<article class="content">
+	    <h1 id="page-title">Page Title</h1>
 
 <p>I am testing this website now. Look at all this content!</p>
 
@@ -26,7 +39,7 @@
 
 <h2 id="and-some-code">And some code</h2>
 
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="lineno"> 1</span> <span class="nt">body</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="lineno"> 1</span> <span class="nt">body</span> <span class="p">{</span>
 <span class="lineno"> 2</span> 	<span class="k">font-family</span><span class="o">:</span> <span class="n">Century</span> <span class="n">Gothic</span><span class="o">,</span><span class="n">CenturyGothic</span><span class="o">,</span><span class="n">AppleGothic</span><span class="o">,</span><span class="k">sans-serif</span><span class="p">;</span>
 <span class="lineno"> 3</span> 	<span class="k">background</span><span class="o">:</span> <span class="m">#111</span><span class="p">;</span>
 <span class="lineno"> 4</span> 	<span class="k">color</span><span class="o">:</span> <span class="nb">ghostwhite</span><span class="p">;</span>
@@ -44,7 +57,7 @@
 <span class="lineno">16</span> 
 <span class="lineno">17</span> <span class="nt">a</span> <span class="p">{</span>
 <span class="lineno">18</span> 	<span class="k">color</span><span class="o">:</span> <span class="m">#DD0048</span><span class="p">;</span>
-<span class="lineno">19</span> <span class="p">}</span></code></pre></div>
+<span class="lineno">19</span> <span class="p">}</span></code></pre></figure>
 
 <p>And a <code>function</code> in the middle of a sentence so that we can check how that goes and goes and goes and goes and goes and goes and goes and goes and goes and goes and goes and goes and goes and goes and goes and goes and goes and goes and goes and goes and goes and goes and goes and goes and goes and goes and goes and goes and goes and goes and goes and goes and goes and goes and goes and goes.
 And how does this work?</p>
@@ -53,5 +66,18 @@ And how does this work?</p>
 
 <p>And we add another paragraph!</p>
 
+	</article>
+	
+    <header class="header">
+        <a href="/" class="logo">
+            <img    src="/images/logo-x1.png"
+                    srcset="/images/logo-x2.png 2x, /images/logo-x3.png 3x"
+                    alt="CowDev Logo" />
+        </a>
+        
+        <div class="cutout-text site-title">
+            CowDev
+        </div>
+    </header>
 </body>
 </html>
